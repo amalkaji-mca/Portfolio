@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amal K Aji · Portfolio</title>
+<meta name="description" content="Amal K Aji: cybersecurity, Android and Flutter development, machine learning research.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<header class="bar">
+  <a class="brand" href="#home" data-go="home"><b>A</b>mal K Aji</a>
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <span class="ind"></span>
+    <button role="tab" data-t="home">Home</button>
+    <button role="tab" data-t="about">About</button>
+    <button role="tab" data-t="work">Work</button>
+    <button role="tab" data-t="skills">Skills</button>
+    <button role="tab" data-t="certs">Certificates</button>
+    <button role="tab" data-t="contact">Contact</button>
+  </nav>
+  <a class="hire" href="assets/Amal_K_Aji_Resume.pdf" download>Resume</a>
+</header>
+
+<main class="stage3d">
+  <!-- HOME -->
+  <section class="panel" id="home" role="tabpanel">
+    <div class="hero">
+      <div class="copy">
+        <p class="pill"><i></i>Team Lead at NYXARA_IN</p>
+        <h1>Amal K Aji</h1>
+        <p class="role">I build <span id="typed"></span><u></u></p>
+        <p class="lede">IMCA student from Kanjirappally, Kerala. I lead a small team shipping Flutter apps and AI products, and I study how to keep systems secure as they scale.</p>
+        <div class="cta">
+          <button class="btn solid" data-go="work">View my work</button>
+          <button class="btn line" data-go="contact">Say hello</button>
+        </div>
+      </div>
+      <div class="deck" data-tilt>
+        <div class="slab">
+          <img src="assets/photo.png" alt="Amal K Aji in a blue denim shirt, taking a mirror photo">
+          <div class="chip c1"><b>Sentinel</b><small>Consumer protection shield</small></div>
+          <div class="chip c2"><b>CurVitae</b><small>AI resume maker, live</small></div>
+          <div class="chip c3"><b>Cyber · Flutter · ML</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="panel" id="about" role="tabpanel">
+    <h2>About me</h2>
+    <div class="split">
+      <div class="glass" data-tilt>
+        <p class="big">I'm an Integrated MCA student at Amal Jyothi College of Engineering, focused on programming, network security and application architecture.</p>
+        <p>I started with Python in school, then moved into cyber defense, IoT and cloud through job simulations and courses. Today I lead the Android and machine learning work at NYXARA_IN, where we're building Sentinel, CurVitae, SKEIN and CELESTIFY.</p>
+      </div>
+      <ol class="time">
+        <li><b>Team Lead, ML Researcher</b><span>NYXARA_IN · Aug 2026 to now</span></li>
+        <li><b>Integrated MCA</b><span>Amal Jyothi College of Engineering · 2026 to 2031</span></li>
+        <li><b>Cyber Job Simulation</b><span>Deloitte Australia via Forage · Feb 2026</span></li>
+        <li><b>Software Engineering Simulation</b><span>Forage · Feb 2026</span></li>
+        <li><b>AISSCE, Computer Science</b><span>St Antony's Public School · to Mar 2026</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="panel" id="work" role="tabpanel">
+    <h2>Work</h2>
+    <p class="sub">Products and hackathon builds. Tilt a card to look closer.</p>
+    <div class="grid" id="projects"></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="panel" id="skills" role="tabpanel">
+    <h2>Skills</h2>
+    <p class="sub">The ring turns on its own. Drag across it to spin it your way.</p>
+    <div class="skillwrap">
+      <div class="ring-scene" id="ringScene"><div class="ring" id="ring"></div></div>
+      <div class="groups" id="groups"></div>
+    </div>
+  </section>
+
+  <!-- CERTS -->
+  <section class="panel" id="certs" role="tabpanel">
+    <h2>Certificates</h2>
+    <div class="filters" id="filters" role="group" aria-label="Filter certificates"></div>
+    <div class="grid cg" id="certList"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="panel" id="contact" role="tabpanel">
+    <h2>Contact</h2>
+    <p class="sub">Open to security projects, app development and collaboration.</p>
+    <div class="split">
+      <div class="glass links">
+        <div class="row"><span>Email<a href="mailto:amalkunnumpurth@gmail.com">amalkunnumpurth@gmail.com</a></span><button class="mini" data-copy="amalkunnumpurth@gmail.com">Copy</button></div>
+        <div class="row"><span>Phone<a href="tel:+918848950660">+91 8848950660</a></span><button class="mini" data-copy="+91 8848950660">Copy</button></div>
+        <div class="row"><span>LinkedIn<a href="https://www.linkedin.com/in/amal-k-aji-nyxara-in/" target="_blank" rel="noopener">amal-k-aji-nyxara-in</a></span></div>
+        <div class="row"><span>Location<em>Kanjirappally, Kerala, India</em></span></div>
+      </div>
+      <form class="glass" id="cf">
+        <label>Your name<input id="cn" required autocomplete="name"></label>
+        <label>Your email<input id="ce" type="email" required autocomplete="email"></label>
+        <label>Message<textarea id="cm" required></textarea></label>
+        <button class="btn solid" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
